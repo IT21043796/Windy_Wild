@@ -1,0 +1,22 @@
+.nav-link:hover{
+    color:palevioletred !important;
+}
+
+.btn:hover{
+    background-color:palevioletred !important;
+    color: white;
+}
+
+ion-icon {
+    right: 10px;
+    color: black;
+    font-size: 1.5em;
+    top: 20px;
+}
+
+ion-icon:hover {
+    color: palevioletred;
+    right: 10px;
+    font-size: 1.5em;
+    top: 20px;
+}

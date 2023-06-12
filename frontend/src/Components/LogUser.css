@@ -17,11 +17,11 @@
     position: relative;
     width: 500px;
     height: 550px;
-    background: black;
+    background:pink;
     border: 2px solid rgba(225,225,225,0.5);
     display: flex;
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     justify-content: center;
     align-items: center;
 }

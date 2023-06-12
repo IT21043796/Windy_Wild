@@ -1,5 +1,6 @@
 import React from 'react'
 import wwLogo from '../Images/logo.png'
+import './Header.css'
 
 class Header extends React.Component {
 
@@ -44,7 +45,11 @@ class Header extends React.Component {
                             <li class="nav-but ps-3">
                                 <a class="btn btn-outline-dark" href="/log">Log In</a>
                             </li>
-
+                        </ul>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li >
+                                <a  href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                            </li>
                         </ul>
                         </div>
                     </div>
