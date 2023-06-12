@@ -1,9 +1,9 @@
 import Header from './Components/Header';
-import AddUser from './Components/addUser';
-import Counter from './Components/Counter';
+import LogUser from './Components/LogUser';
 import PictureSlide from './Components/PictureSlide';
+import AddUser from './Components/AddUser';
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
@@ -11,9 +11,8 @@ function App() {
       
         <Header/>
           <Routes>
+              <Route path="/log" element = {<LogUser/>}/>
               <Route path="/add" element = {<AddUser/>}/>
-              <Route path="/Counter" element = {<Counter/>}/>
-              <Route path="/" element= {<PictureSlide/>}/>
           </Routes>
       
     </div>

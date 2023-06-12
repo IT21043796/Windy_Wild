@@ -1,0 +1,5 @@
+.carousel-item{
+    background-image: url('./Images/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
