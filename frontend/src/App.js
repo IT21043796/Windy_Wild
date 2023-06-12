@@ -1,10 +1,10 @@
-import Counter from './Components/Counter';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
       <h1>Santhush Gimhana</h1>
-      <Counter/>
+      <Header/>
     </div>
   );
 }
