@@ -5,13 +5,17 @@ let User = require ("../models/user.js");
 router.route("/add").post((req,res)=>{
 
     const name = req.body.name;
-    const age = req.body.age;
-    const address = req.body.address;
+    const dob = req.body.dob;
+    const email = req.body.email;
+    const password = req.body.password;
+    const rpwd = req.body.rpwd;
 
     const newUser = new User({
         name,
-        age,
-        address
+        dob,
+        email,
+        password,
+        rpwd
     }) 
     
     newUser.save().then(()=>{
@@ -39,8 +43,10 @@ router.route("/update/:id").put(async (req,res)=>{
 
     const userUpdate = {
         name,
-        age,
-        address
+        dob,
+        email,
+        password,
+        rpwd
     }
 
     const update = await User.findByIdAndUpdate(userId,userUpdate).then(() => {

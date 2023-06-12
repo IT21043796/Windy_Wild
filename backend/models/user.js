@@ -7,11 +7,19 @@ const userSchema = new Schema ({
         type: String,
         required : true
     },
-    age : {
-        type: Number,
+    dob : {
+        type: String,
         required : true
     },
-    address : {
+    email : {
+        type: String,
+        required : true
+    },
+    password : {
+        type: String,
+        required : true
+    },
+    rpwd : {
         type: String,
         required : true
     },
