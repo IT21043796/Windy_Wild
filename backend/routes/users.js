@@ -1,4 +1,4 @@
-const router = requir("express").Router();
+const router = require("express").Router();
 let User = require ("../models/user.js");
 
 //create.........
@@ -64,7 +64,7 @@ router.route("/delete/:id").delete(async (req,res)=>{
 })
 
 //fetch single record......
-router.route("./get/:id").get(async (req,res)=>{
+router.route("/get/:id").get(async (req,res)=>{
     let userId = req.params.id;
     const user = await User.findById(userId).then(() => {
         res.status(200).send({status : "User fetched"})
