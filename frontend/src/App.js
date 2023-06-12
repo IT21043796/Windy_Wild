@@ -1,17 +1,23 @@
 import Header from './Components/Header';
-import addUser from './Components/addUser';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import AddUser from './Components/addUser';
+import Counter from './Components/Counter';
+import PictureSlide from './Components/PictureSlide';
+
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <Route>
-      <div className="App">
+    <div>
+      
         <Header/>
-          <Route path="/add" exact componenet ={addUser}/>
-        <addUser/>
-      </div>
-    </Route>
-  );
+          <Routes>
+              <Route path="/add" element = {<AddUser/>}/>
+              <Route path="/Counter" element = {<Counter/>}/>
+              <Route path="/" element= {<PictureSlide/>}/>
+          </Routes>
+      
+    </div>
+  )
 }
 
 export default App;
