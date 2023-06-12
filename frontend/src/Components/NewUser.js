@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
 import './AddUser.css'
 import axios from "axios";
-import {Route, Routes} from 'react-router-dom';
-import LogUser from './Components/LogUser';
 
 export default function AddUser(){
     

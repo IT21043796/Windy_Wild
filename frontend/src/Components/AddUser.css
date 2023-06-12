@@ -18,13 +18,14 @@
     position: relative;
     width: 500px;
     height: 600px;
-    background: palevioletred;
+    background-color:palevioletred;
     border: 2px solid rgba(225,225,225,0.5);
     display: flex;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
 }
 
 h2{
@@ -63,7 +64,7 @@ input:valid ~label{
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: #fff
+    color: #fff;
 }
 
 .inputbox ion-icon {
