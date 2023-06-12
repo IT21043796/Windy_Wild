@@ -1,14 +1,13 @@
 import Header from './Components/Header';
 import LogUser from './Components/LogUser';
 import PictureSlide from './Components/PictureSlide';
-import AddUser from './Components/AddUser';
-
+import AddUser from './Components/NewUser';
+import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      
         <Header/>
           <Routes>
               <Route path="/log" element = {<LogUser/>}/>

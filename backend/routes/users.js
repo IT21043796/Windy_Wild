@@ -14,8 +14,7 @@ router.route("/add").post((req,res)=>{
         name,
         dob,
         email,
-        password,
-        rpwd
+        password
     }) 
     
     newUser.save().then(()=>{
