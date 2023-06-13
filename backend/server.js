@@ -26,7 +26,9 @@ connection.once("open",() =>{
 })
 
 const userRouter = require("./routes/users.js");
+const productRouter = require("./routes/products.js");
 
+app.use("/product",productRouter)
 app.use("/user",userRouter)
 
 app.listen(PORT, ()=>{

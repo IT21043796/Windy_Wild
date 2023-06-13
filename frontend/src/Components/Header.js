@@ -1,6 +1,7 @@
 import React from 'react'
 import wwLogo from '../Images/logo.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
 
@@ -34,7 +35,7 @@ class Header extends React.Component {
                             </li>
 
                             <li class="nav-item ps-5">
-                            <a class="nav-link" href="#">Produts</a>
+                            <a class="nav-link" href="/product">Produts</a>
                             </li>
 
                         </ul>

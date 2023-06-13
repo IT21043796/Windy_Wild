@@ -1,23 +1,32 @@
-import React from 'react'
-import './LogUser.css'
+import React from 'react';
+import './LogUser.css';
+import { useRef,useState, useEffect, useContext } from 'react';
+import axios from 'axios';
+import {useNavigate, Link} from 'react-router-dom';
 
-class LogUser extends React.Component{
-    
-    render(){
+export default function LogUser(){
+
+    const [email,setEmail] = useState('');
+    const [password,setPwd] = useState('');
+
         return(
-
+            
             <div class="container section">   
                 <div class="form-box">
-                        <form action = "#">
+                        <form action = "#" >
                             <h2>Log In</h2>
                             <div class="inputbox">
                                 <ion-icon name="mail-outline"></ion-icon>
-                                <input type = "email" required/>
+                                <input type = "email" id="email" idrequired onChange={(e)=>{
+                                    setEmail(e.target.value);  
+                                }}/>
                                 <label for="">Email</label>
                             </div>
                             <div class="inputbox">
                                 <ion-icon name="lock-closed-outline"></ion-icon>
-                                <input type = "password" required/>
+                                <input type = "password" id="password" required onChange={(e)=>{
+                                    setPwd(e.target.value);  
+                                }}/>
                                 <label for="">Password</label>
                             </div>
                             <div class="forget">
@@ -29,9 +38,6 @@ class LogUser extends React.Component{
                             </div>
                         </form>
                     </div>
-                </div> 
+                </div>
         )
-    }
 }
-
-export default LogUser;
