@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './galary.css';
-import CloseIcon from '@mui/icons-material/Close';
+
 
 import Img1 from '../Images/Galary/1.jpg';
 import Img2 from '../Images/Galary/2.jpg';
@@ -58,7 +58,7 @@ export default function Galary() {
     <>
     <div className={model? "model open":"model"}>
         <img src={tempimgSrc}/>
-        <CloseIcon onClick={()=> setModel(false)}/>
+        
     </div>
     <div className="galary-container">
         {console.warn(data)}
