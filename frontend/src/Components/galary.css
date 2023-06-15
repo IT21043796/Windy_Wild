@@ -1,5 +1,4 @@
 .gallery{
-    overflow: scroll;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -13,20 +12,17 @@
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
     cursor: pointer;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .galary-container {
-    overflow: auto;
-    height: 650px;
+    overflow:scroll;
+    height: 500px;
 }
 
-.galary-container {
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: transparent transparent; /* Firefox */
-  }
+
   .galary-container::-webkit-scrollbar {
-    width: 6px; /* Adjust the width according to your needs */
+    width: 5px; /* Adjust the width according to your needs */
   }
   
   .galary-container::-webkit-scrollbar-track {
@@ -34,7 +30,7 @@
   }
   
   .galary-container::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: black;
   }
 
   .model{
@@ -73,7 +69,7 @@
     margin: 0 auto;
   }
 
-  .model.open svg {
+  .model.open ion-icon {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -82,4 +78,85 @@
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffff;
+}
+
+.outer{
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+}
+
+.album{
+  display: grid;
+  margin-left: -220px;
+  width: 50%;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 10px;
+  grid-column-gap: 25px;
+}
+
+.tile {
+  position: relative;
+  height: 125px;
+  width:200px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+}
+.i {
+  height: 125px;
+  width:200px;
+  border-radius: 10px;
+}
+
+.tile::before{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -15px;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
+}
+
+.farm::before{
+    content:"Our Farm";
+}
+.dispatches::before{
+  content:"Dispatches";
+}
+.customer::before{
+  content:"Customer Reviews";
+}
+.all::before{
+  content:"All Images";
+}
+
+
+
+.tile::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius:10px ;
+  height: 0;
+  background-color: rgba(0,0,0, 0.3);
+  transition: .3s;
+}
+
+.tile:hover::after{
+  height: 100%;
+}
+
+.tile:hover::before{
+  margin-top:0;
+  opacity: 1;
 }

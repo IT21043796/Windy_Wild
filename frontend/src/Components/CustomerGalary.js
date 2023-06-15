@@ -5,19 +5,16 @@ import tile1 from '../Images/Galary/tile1.jpg';
 import tile2 from '../Images/Galary/tile2.jpg';
 import tile3 from '../Images/Galary/tile3.jpg';
 
-import Img1 from '../Images/Galary/1.jpg';
-import Img2 from '../Images/Galary/2.jpg';
-import Img3 from '../Images/Galary/3.jpg';
-import Img4 from '../Images/Galary/4.jpg';
-import Img5 from '../Images/Galary/5.jpg';
-import Img6 from '../Images/Galary/6.jpg';
-import Img7 from '../Images/Galary/7.jpg';
-import Img8 from '../Images/Galary/8.jpg';
-import Img9 from '../Images/Galary/9.jpg';
-import Img10 from '../Images/Galary/10.jpg';
-import Img11 from '../Images/Galary/11.jpg';
+import Img1 from '../Images/Galary/Customer/1.jpg';
+import Img2 from '../Images/Galary/Customer/2.jpg';
+import Img3 from '../Images/Galary/Customer/3.jpg';
+import Img4 from '../Images/Galary/Customer/4.jpg';
+import Img5 from '../Images/Galary/Customer/5.jpg';
+import Img6 from '../Images/Galary/Customer/6.jpg';
+import Img7 from '../Images/Galary/Customer/7.jpg';
 
-export default function Galary() {
+
+export default function CustomerGalary() {
 
   let data = [
     {
@@ -48,22 +45,6 @@ export default function Galary() {
       id: 7,
       imgSrc: Img7,
     },
-    {
-      id: 8,
-      imgSrc: Img8,
-    },
-    {
-      id: 9,
-      imgSrc: Img9,
-    },
-    {
-      id: 10,
-      imgSrc: Img10,
-    },
-    {
-      id: 10,
-      imgSrc: Img11,
-    },
   ]
   const[model, setModel] = useState(false);
   const[tempimgSrc, setTempImgSrc] = useState('');
@@ -88,7 +69,6 @@ export default function Galary() {
                     <a href="/custo"><div className="tile customer">
                         <img  className="i" src={tile2}/>
                     </div></a>
-                    
             </div></center>
             
             <div className={model? "model open":"model"}>
