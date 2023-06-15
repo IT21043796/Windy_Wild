@@ -2,6 +2,20 @@
     background-color: papayawhip;
     height: 85vh;
     width: 85%;
-    padding: 10px;
     border-radius: 25px;
+}
+
+.addP{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.addP:hover{
+    color: palevioletred;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 45px;
 }

@@ -11,7 +11,7 @@ export default function Products(){
     return(
         <div>
             <div class="container outerbox">
-                <button onClick={() => navigate('/addP')}>Add</button>
+            <ion-icon class="addP" name="add-circle-outline"onClick={() => navigate('/addP')} ></ion-icon>
                 <form>
                
                 </form>

@@ -27,7 +27,7 @@ class Header extends React.Component {
                             </li>
 
                             <li class="nav-item ps-5">
-                            <a class="nav-link" href="#">Galary</a>
+                            <a class="nav-link" href="/galary">Galary</a>
                             </li>
 
                             <li class="nav-item ps-5">
